@@ -1,0 +1,6 @@
+/target
+emails/
+emails.parquet.brotli
+.DS_Store
+clete_config.json
+.env

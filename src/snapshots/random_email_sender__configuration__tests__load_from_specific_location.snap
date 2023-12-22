@@ -1,0 +1,34 @@
+---
+source: src/configuration.rs
+expression: "Configuration::load_from_location(\"config.json\").unwrap()"
+---
+Configuration {
+    email_path: "./emails/*.xz",
+    file_type: Lzma,
+    smtp: Smtp {
+        server: "your.example.com",
+        username: "me@example.com",
+        password: "MyPassword",
+        from: "My Name <me@example.com>",
+        reply_to: "My Name <me@example.com>",
+        to: "Your Name <you@example.com>",
+    },
+    error_smtp: Some(
+        Smtp {
+            server: "second.example.com",
+            username: "second@example.com",
+            password: "SecondPassword",
+            from: "Second Name <me@example.com>",
+            reply_to: "Second Name <me@example.com>",
+            to: "Second Name <you@example.com>",
+        },
+    ),
+    read: Some(
+        Imap {
+            server: "read.example.com",
+            username: "read@example.com",
+            password: "ThirdPassword",
+            action: Read,
+        },
+    ),
+}

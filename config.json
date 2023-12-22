@@ -1,0 +1,23 @@
+{
+  "emailPath": "./emails/*.xz",
+  "fileType": "LZMA",
+  "smtp": {
+    "server": "your.example.com",
+    "username": "me@example.com",
+    "from": "My Name <me@example.com>",
+    "replyTo": "My Name <me@example.com>",
+    "to": "Your Name <you@example.com>"
+  },
+  "errorSmtp": {
+    "server": "second.example.com",
+    "username": "second@example.com",
+    "from": "Second Name <me@example.com>",
+    "replyTo": "Second Name <me@example.com>",
+    "to": "Second Name <you@example.com>"
+  },
+  "read": {
+    "server": "read.example.com",
+    "username": "read@example.com",
+    "action": "read"
+  }
+}
